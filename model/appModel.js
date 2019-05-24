@@ -30,52 +30,11 @@ restaurant.getAllRestaurant = function getAllRestaurant(result) {
             });   
 };
 
-// Grades
+// // Grades
 
-restaurant.getRestaurantByGrades = () => {
-    return new Promise((resolve, reject) => {
-        sql.query("Select * from restaurant where grades = A", function (err, res) {
-
-            if(err)
-                return reject(err);
-
-             return resolve(res);
-        });   
-    })
-}
-
-// Types of foods
-
-restaurant.getRestaurantByTypesOfFood = () => {
-    return new Promise((resolve, reject) => {
-        sql.query("Select * from restaurant where cuisine = Bakery", function (err, res) {
-
-            if(err)
-                return reject(err);
-
-             return resolve(res);
-        });   
-    })
-}
-
-// 
-
-restaurant.getRestaurantByTypesOfFood = () => {
-    return new Promise((resolve, reject) => {
-        sql.query("Select * from restaurant where cuisine = Bakery", function (err, res) {
-
-            if(err)
-                return reject(err);
-
-             return resolve(res);
-        });   
-    })
-}
-
-
-// restaurant.promiseExample = () => {
+// restaurant.getRestaurantByGrades = () => {
 //     return new Promise((resolve, reject) => {
-//         sql.query("Select * from restaurant", function (err, res) {
+//         sql.query("Select * from restaurant where grades = A", function (err, res) {
 
 //             if(err)
 //                 return reject(err);
@@ -84,5 +43,34 @@ restaurant.getRestaurantByTypesOfFood = () => {
 //         });   
 //     })
 // }
+
+// // Types of foods
+
+// restaurant.getRestaurantByTypesOfFood = () => {
+//     return new Promise((resolve, reject) => {
+//         sql.query("Select * from restaurant where cuisine = Bakery", function (err, res) {
+
+//             if(err)
+//                 return reject(err);
+
+//              return resolve(res);
+//         });   
+//     })
+// }
+
+// // 
+
+
+restaurant.promiseExample = () => {
+    return new Promise((resolve, reject) => {
+        sql.query("Select * from restaurant", function (err, res) {
+
+            if(err)
+                return reject(err);
+
+             return resolve(res);
+        });   
+    })
+}
 
 module.exports= restaurant;

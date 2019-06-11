@@ -5,8 +5,8 @@ var mysql = require('mysql');
 //local mysql db connection
 var connection = mysql.createConnection({
     host     : 'localhost',
-    user     : 'admin',
-    password : 'password',
+    user     : 'enteryourusername',
+    password : 'enteryourdbbpassword',
     database : 'nyc-restau'
 });
 

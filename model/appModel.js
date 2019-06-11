@@ -30,7 +30,7 @@ restaurant.getAllRestaurant = function getAllRestaurant(result) {
             });   
 };
 
-// // Grades
+// Grades
 
 // restaurant.getRestaurantByGrades = () => {
 //     return new Promise((resolve, reject) => {
@@ -44,7 +44,7 @@ restaurant.getAllRestaurant = function getAllRestaurant(result) {
 //     })
 // }
 
-// // Types of foods
+// Types of foods
 
 // restaurant.getRestaurantByTypesOfFood = () => {
 //     return new Promise((resolve, reject) => {
@@ -58,7 +58,7 @@ restaurant.getAllRestaurant = function getAllRestaurant(result) {
 //     })
 // }
 
-// // 
+// 
 
 
 restaurant.promiseExample = () => {

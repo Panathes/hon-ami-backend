@@ -2,18 +2,6 @@
 
 var restaurant = require('../model/appModel.js');
 
-// exports.list_all_tasks = function(req, res) {
-//     restaurant.getAllRestaurant(function(err, restaurant) {
-
-//     console.log('controller');
-//     if (err)
-//       res.send(err);
-//       console.log('res', restaurant);
-//     res.send(restaurant);
-//   });
-// };
-
-
 exports.list_all_tasks_promise = function(req, res) {
     restaurant.promiseExample()
         .then((result) => {
@@ -27,7 +15,6 @@ exports.list_all_tasks_promise = function(req, res) {
 exports.All_Borough_promise = function(req, res) {
     restaurant.getAllBoroughDesc()
         .then((result) => {
-            console.log(res)
             res.status(200).json(result)
         })
         .catch((err) => {
@@ -38,10 +25,11 @@ exports.All_Borough_promise = function(req, res) {
 exports.Borough_Desc_promise = function(boroughName, req, res) {
     restaurant.Borough_Desc_promise(boroughName)
     .then((result) => {
-        console.log(res);        
+               
         res.status(200).json(result)
     })
     .catch((err) => {
+        console.log(res); 
         res.status(400).json(err);
     })
 }

@@ -8,6 +8,7 @@ app.use(function(req, res, next) {
   next();
 });
 
+
 module.exports = function(app) {
   var restaurant = require('../controllers/appController');
 
@@ -26,9 +27,5 @@ module.exports = function(app) {
     })
   };
 
-  // app.get('/api/restaurant/:boroughname/borough', (req, res) =>{
-  //   console.log(req.params);
-  // })  
 
-  // .get(restaurant.Borough_Desc_promise)
 

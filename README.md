@@ -1,5 +1,7 @@
 ## Hon-ami REST API
 
+## Modelisation ddb
+
 ## Technos utilisés
 
 nodejs
@@ -7,27 +9,30 @@ express
 
 ## Pourquoi node ?
 
-Nous avons choisi node car c'est un langage d'utilisation, mais également grâce a sa forte communauté,
-qui garanti des ressources plus simple d'accès
-Les capacités asynchrones non bloquantes de Node rendent les opérations en temps réel et en continu simples, faciles et efficaces.
-Enfin, dans le cas où le projet grandi, il est plus simple de trouver des développeurs utilisant node 
+Nous avons choisi node car c'est un langage d'utilisation, mais également grâce a sa forte communauté,qui garanti des ressources plus simple d'accès
+<br/> Les capacités asynchrones non bloquantes de Node rendent les opérations en temps réel et en continu simples, faciles et efficaces.
+<br/> Enfin, dans le cas où le projet grandi, il est plus simple de trouver des développeurs utilisant node 
 
 ## Pourquoi expressjs ?
 
-Nous avons choisi expressjs pour sa simplicité et clarté concernant les routes
-Express est le framework le plus utilisé de Node
+<br/> Nous avons choisi expressjs pour sa simplicité et clarté concernant les routes
+<br/> Express est le framework le plus utilisé de Node
 
-Sources :
+## Données de la ddb
+
+Disponible dans le dossier asset
+
+## Sources 
 
 Voici les différentes ressources utilisé pour la réalisation du projet : 
-https://www.cultivoo.com
-wikipedia.org.
-http://tpe-new-york.e-monsite.com
-https://www.census.gov
-https://www.newyorkcity.fr
-http://tpe-new-york.e-monsite.com/pages/coordonnees.html
+<br/> https://www.cultivoo.com
+<br/> wikipedia.org.
+<br/> http://tpe-new-york.e-monsite.com
+<br/> https://www.census.gov
+<br/> https://www.newyorkcity.fr
+<br/> http://tpe-new-york.e-monsite.com/pages/coordonnees.html
 
-https://github.com/agabardo/nyc_restaurants : data de référence pour les restaurants/types et leurs notes d'inspection sanitaire
+<br/> https://github.com/agabardo/nyc_restaurants : data de référence pour les restaurants/types et leurs notes d'inspection sanitaire
 
 
 ## Install

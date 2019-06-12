@@ -2,6 +2,8 @@
 
 ## Modelisation ddb
 
+Disponible dans le dossier asset
+
 ## Technos utilisés
 
 nodejs

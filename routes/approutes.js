@@ -18,6 +18,17 @@ module.exports = function(app) {
   app.route('/api/restaurant/borough')
     .get(restaurant.All_Borough_promise);  
   
-  app.route('/api/restaurant/:boroughName/borough')
-    .get(restaurant.Borough_Desc_promise)
-    };
+  app.route('/api/restaurant/:boroughname/borough')
+    .get(function(req, res){
+      var boroughName = req.params
+      console.log(boroughName);
+      restaurant.Borough_Desc_promise(boroughName)
+    })
+  };
+
+  // app.get('/api/restaurant/:boroughname/borough', (req, res) =>{
+  //   console.log(req.params);
+  // })  
+
+  // .get(restaurant.Borough_Desc_promise)
+

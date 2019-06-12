@@ -15,51 +15,20 @@ var restaurant = function(restaurant){
 
 };
 
-restaurant.getAllRestaurant = function getAllRestaurant(result) {
-        sql.query("Select * from restaurant", function (err, res) {
+// restaurant.getAllRestaurant = function getAllRestaurant(result) {
+//         sql.query("Select * from restaurant", function (err, res) {
 
-                if(err) {
-                    console.log("error: ", err);
-                    result(null, err);
-                }
-                else{
-                  console.log('restaurant : ', res);  
+//                 if(err) {
+//                     console.log("error: ", err);
+//                     result(null, err);
+//                 }
+//                 else{
+//                   console.log('restaurant : ', res);  
 
-                 result(null, res);
-                }
-            });   
-};
-
-// Grades
-
-// restaurant.getRestaurantByGrades = () => {
-//     return new Promise((resolve, reject) => {
-//         sql.query("Select * from restaurant where grades = A", function (err, res) {
-
-//             if(err)
-//                 return reject(err);
-
-//              return resolve(res);
-//         });   
-//     })
-// }
-
-// Types of foods
-
-// restaurant.getRestaurantByTypesOfFood = () => {
-//     return new Promise((resolve, reject) => {
-//         sql.query("Select * from restaurant where cuisine = Bakery", function (err, res) {
-
-//             if(err)
-//                 return reject(err);
-
-//              return resolve(res);
-//         });   
-//     })
-// }
-
-// 
-
+//                  result(null, res);
+//                 }
+//             });   
+// };
 
 restaurant.promiseExample = () => {
     return new Promise((resolve, reject) => {
@@ -70,6 +39,30 @@ restaurant.promiseExample = () => {
 
              return resolve(res);
         });   
+    })
+}
+
+restaurant.getAllBoroughDesc = () => {
+    return new Promise((resolve, reject) => {
+        sql.query("Select * from borough_desc", function (err, res) {
+            
+            if(err)
+                return reject(err);
+
+            return resolve(res);
+        })
+    })
+}
+
+restaurant.Borough_Desc_promise = (boroughName) => {
+    return new Promise((resolve, reject) => {
+        sql.query("Select * from restaurant WHERE borough_title = '" + connection.escape(boroughName) + "'", function(err, res) {
+            
+            if(err)
+                return reject(err);
+
+            return resolve(res);
+        })
     })
 }
 

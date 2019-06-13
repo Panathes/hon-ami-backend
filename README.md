@@ -13,11 +13,12 @@ express
 
 Nous avons choisi node car c'est un langage d'utilisation, mais également grâce a sa forte communauté,qui garanti des ressources plus simple d'accès
 <br/> Les capacités asynchrones non bloquantes de Node rendent les opérations en temps réel et en continu simples, faciles et efficaces.
+<br/> Notre composition d'équipe constitué que de développeur front, nous a poussé a choisir une techno back-end familière a nos stack habituelles
 <br/> Enfin, dans le cas où le projet grandi, il est plus simple de trouver des développeurs utilisant node 
 
 ## Pourquoi expressjs ?
 
-<br/> Nous avons choisi expressjs pour sa simplicité et clarté concernant les routes
+<br/> Nous avons choisi expressjs pour sa simplicité et clarté concernant le routing
 <br/> Express est le framework le plus utilisé de Node
 
 ## Données de la ddb
